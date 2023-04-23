@@ -4,7 +4,7 @@ import pickle
 
 
 #Importing our pickle file
-model = pickle.load(open('model1.pkl', 'rb'))
+model = pickle.load(open('car_pred_model.pkl', 'rb'))
 
 #Title of app
 st.title('Predicted price of car')
