@@ -11,13 +11,13 @@ st.title('Predicted price of car')
 
 #Range of paramenters
 #Price	Kilometer	Fuel Type	Transmission	Owners Before	Engine	Fuel Tank Capacity	Age
-Kilometer = st.slider("Kilometer",75,2000000)
+Kilometer = st.text_input("Kilometer",75,2000000)
 Fuel_Type = st.slider("Fuel Type",0,1)
 Transmission = st.slider("Transmission",0,1)
 Owners = st.slider("Owners Before",0,4)
-Engine = st.slider("Engine",624,6592)
-Fuel = st.slider("Fuel Tank Capacity",15,105)
-Age = st.slider("Age",1,35)
+Engine = st.text_input("Engine",624,6592)
+Fuel = st.text_input("Fuel Tank Capacity",15,105)
+Age = st.text_input("Age",1,35)
 
 #Pridiction function
 def predict():
