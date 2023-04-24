@@ -7,17 +7,17 @@ import pickle
 model = pickle.load(open('car_pred_model.pkl', 'rb'))
 
 #Title of app
-st.title('Predicted price of car')
+st.title('Predicted price of car :car:')
 
 #Range of paramenters
 #Price	Kilometer	Fuel Type	Transmission	Owners Before	Engine	Fuel Tank Capacity	Age
 Kilometer = st.text_input("Kilometer",75,2000000)
-Fuel_Type = st.slider("Fuel Type",0,1)
-Transmission = st.slider("Transmission",0,1)
+Fuel_Type = st.slider("Fuel Type Diesel",0,1)
+Transmission = st.slider("Transmission Automatic ",0,1)
 Owners = st.slider("Owners Before",0,4)
-Engine = st.text_input("Engine",624,6592)
-Fuel = st.text_input("Fuel Tank Capacity",15,105)
-Age = st.text_input("Age",1,35)
+Engine = st.text_input("Engine in CC",624,6592)
+Fuel = st.text_input("Fuel Tank Capacity in L",15,105)
+Age = st.text_input("Age of the Car",1,35)
 
 #Pridiction function
 def predict():
